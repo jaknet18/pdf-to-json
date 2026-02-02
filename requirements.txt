@@ -1,0 +1,7 @@
+requests==2.32.3
+pydantic==2.11.5
+python-dotenv==1.1.0
+fonttools==4.58.2
+PyMuPDF==1.26.1
+pillow==12.0.0
+lxml==6.0.2

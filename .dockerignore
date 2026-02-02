@@ -1,0 +1,11 @@
+venv
+.env
+**/__pycache__
+deploy.sh
+
+output/
+
+src/kling_token.py
+src/font.py
+
+ttf-fonts

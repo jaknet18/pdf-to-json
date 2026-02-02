@@ -1,0 +1,38 @@
+[
+    {
+        "fontFamily": "Helvetica",
+        "fullFontName": "Helvetica",
+        "postScriptName": "Helvetica",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/helvetica.ttf"
+    },
+    {
+        "fontFamily": "Arial",
+        "fullFontName": "Arial",
+        "postScriptName": "Arial",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/BCDGEE_ArialMT.ttf"
+    },
+    {
+        "fontFamily": "Calibri",
+        "fullFontName": "Calibri",
+        "postScriptName": "Calibri",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/calibri.ttf"
+    },
+    {
+        "fontFamily": "Calibri",
+        "fullFontName": "Calibri Italic",
+        "postScriptName": "Calibri-Italic",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/calibri-italic.ttf"
+    },
+    {
+        "fontFamily": "Calibri",
+        "fullFontName": "Calibri Bold Italic",
+        "postScriptName": "Calibri-BoldItalic",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/calibri-bold-italic.ttf"
+    },
+    {
+        "fontFamily": "Aptos",
+        "fullFontName": "Aptos",
+        "postScriptName": "Aptos",
+        "fontUrl": "https://code-test-ai.s3.us-east-1.amazonaws.com/fonts/aptos.ttf"
+    }
+]
